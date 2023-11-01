@@ -1,13 +1,20 @@
 import { Outlet } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const LayoutPublic = () => {
   return (
     <>
-      <nav>Navbar</nav>
+      <Navbar />
       <main>
-        <Outlet />
+        <Container>
+          <Outlet />
+        </Container>
       </main>
-      <footer>Footer</footer>
+
+      <Footer />
     </>
   );
 };
